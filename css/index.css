@@ -35,6 +35,13 @@ body, html {
     bottom: 0;
     left: 16px;
   }
+
+  .center {
+    position: absolute;
+    bottom: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
   
   /* Position text in the middle */
   .middle {
@@ -43,6 +50,7 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color:aqua;
   }
   
   /* Style the <hr> element */
