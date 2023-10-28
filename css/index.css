@@ -5,11 +5,15 @@ body, html {
   
   .bgimg {
     /* Background image */
-    background-image: url('../images/cpt.jpg');
+    background-image: 
+    linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/background_blue_sky.jpg');
+    /*background-image: url('../images/background_blue_sky.jpg'); */
     /* Full-screen */
     height: 100%;
     /* Center the background image */
     background-position: center;
+    /* no repeat*/
+    background-repeat: no-repeat;
     /* Scale and zoom in the image */
     background-size: cover;
     /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
@@ -53,8 +57,36 @@ body, html {
     color:aqua;
   }
   
+  .middle a {
+      text-decoration: none;
+  }
+  
+  .fake_button {
+      display: inline-block;
+      background: #000;
+      border-radius: 4px;
+      font-family: "arial-black";
+      font-size: 14px;
+      color: #FFF;
+      padding: 8px 12px;
+      cursor: pointer;  
+  }
+  
+  /* style for bottom text in home */
+  .bottom-text {
+    color:black;
+  }
+  
+  #gameoflife_link {
+      color: pink;
+  }
+  
   /* Style the <hr> element */
   hr {
     margin: auto;
     width: 40%;
   }
+  
+  a:visited {
+  color: aqua;
+}
