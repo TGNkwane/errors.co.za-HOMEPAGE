@@ -6,31 +6,65 @@
         <link rel="icon" href="images/errorsIcon.svg" sizes="any" type="image/svg+xml">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/index.css"/>
-        <title>Errors: A collection of error definitions and fixes</title>
+        <title>Errors.co.za - Tech Insights & Explorations</title>
     </head>
     <body>
-        <div class="bgimg">
-            <div class="topleft">
-                <!-- <img src="ErrorsWhiteBack.png" alt="errors.co.za" width="100" height="100"/>
-                <p>Logo</p>
-                some logo manipulation needed here
-                -->
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">ERRORS.CO.ZA</a>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="https://cvtebogonkwane.errors.co.za/" class="nav-link cv-link" target="_blank">CV</a></li>
+                </ul>
             </div>
-            <div class="middle">
-                <h1>Welcome to EXPLORATION:</h1>
-                <h4>Take a look around ...</h4>
-                <hr>
-                <!-- currently has no code to assign its value: CHECK LATER FOR USE OR DELETE -->
-                <p class="bottom-text" id="CREATEAFUNCTIONFORMETOCHANGE"></p>
-                <p class="bottom-text">Have a look at my CV in the mean time</p>
-                <p class="bottom-text"><a class="fake_button" href="https://cvtebogonkwane.errors.co.za/">CV: Tebogo Nkwane</a></p>
-                <p class="bottom-text" id="gameoflife_link">Or maybe you fancy a game?</p>
-                <p class="bottom-text"><a class="fake_button" href="https://gameoflife.errors.co.za/">The Game of Life Simulation</a></p>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to EXPLORATION</h1>
+                <p class="hero-subtitle">Tech insights, debugging adventures, and continuous learning</p>
+                <div class="hero-buttons">
+                    <a href="#blog" class="btn btn-primary">Read Articles</a>
+                    <a href="https://cvtebogonkwane.errors.co.za/" class="btn btn-secondary" target="_blank">View CV</a>
+                </div>
             </div>
-            <div class="center">
-                
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About This Space</h2>
+                <p class="about-text">
+                    Welcome to my digital playground where I share thoughts on software development, 
+                    debugging adventures, and technical explorations. This is a space for learning, 
+                    sharing knowledge, and documenting the journey through the ever-evolving world of technology.
+                </p>
             </div>
-        </div>
-        <script  src="js/index.js"></script>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div id="blog-posts" class="blog-grid">
+                    <!-- Blog posts will be dynamically loaded here -->
+                    <div class="loading">Loading posts...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; <span id="year"></span> Errors.co.za - Tebogo Nkwane. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="js/index.js"></script>
     </body>
 </html>
